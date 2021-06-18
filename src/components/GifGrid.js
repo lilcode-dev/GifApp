@@ -7,10 +7,26 @@ import { GifGridItem } from './GifGridItem';
 export const GifGrid = ({ category }) => {
 
     const { data:images, loading } = useFetchGifs( category );
+    const handleMouseEnter = (e, remove, add) => {
+        e.preventDefault();
+        let { classList } = e.target;
+        console.log(classList);
+        if (classList.contains(remove)) {
+            classList.remove(remove);
+        }
+        classList.add(add);
+        setTimeout(() => {
+            classList.remove(add);
+        }, 800);
+    };
 
     return (
         <>
-            <h3 className="animate__animated animate__fadeIn"> { category } </h3>
+            <h3 className="animate__animated animate__shakeY" onMouseEnter={(e) => {
+                handleMouseEnter(e,
+                    'animate__shakeY',
+                    'animate__shakeY')
+            }}> { category } </h3>
 
             { loading && <p className="animate__animated animate__flash">Loading</p> }
 
