@@ -1,9 +1,9 @@
 import { getGifs } from '../../helpers/getGifs';
 
 
-describe('Pruebas con getGifs Fecth', () => {
+describe('Test on getGifs Fecth', () => {
     
-    test('debe de traer 10 elementos', async() => {
+    test('should be return 10 elements', async() => {
         
         const gifs = await getGifs('One Punch');
 
@@ -11,7 +11,7 @@ describe('Pruebas con getGifs Fecth', () => {
 
     })
 
-    test('debe de traer 10 elementos', async() => {
+    test('should be return 0 elements', async() => {
         
         const gifs = await getGifs('');
 

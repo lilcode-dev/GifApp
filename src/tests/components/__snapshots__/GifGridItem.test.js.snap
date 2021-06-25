@@ -2,7 +2,8 @@
 
 exports[`Pruebas en <GifGridItem /> debe de mostrar el componente correctamente 1`] = `
 <div
-  className="card animate__animated animate__fadeIn"
+  className="card animate__animated animate__fadeInDownBig"
+  onMouseEnter={[Function]}
 >
   <img
     alt="Un título"

@@ -42,9 +42,5 @@ describe('Pruebas en <GifGridItem />', () => {
         expect( className.includes('animate__fadeIn') ).toBe( true );
 
     })
-    
-    
-    
-    
 
 })

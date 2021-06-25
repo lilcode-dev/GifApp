@@ -3,7 +3,8 @@
 exports[`Pruebas en el <GifGrid /> debe de mostrarse correctamente 1`] = `
 <Fragment>
   <h3
-    className="animate__animated animate__fadeIn"
+    className="animate__animated animate__shakeY"
+    onMouseEnter={[Function]}
   >
      
     One Punch
