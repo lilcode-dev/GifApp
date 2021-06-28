@@ -10,7 +10,6 @@ export const GifGrid = ({ category }) => {
     const handleMouseEnter = (e, remove, add) => {
         e.preventDefault();
         let { classList } = e.target;
-        console.log(classList);
         if (classList.contains(remove)) {
             classList.remove(remove);
         }
