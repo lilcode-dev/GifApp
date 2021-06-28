@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 export const handleMouseEnter = (e, remove, add) => {
     e.preventDefault();
     let { classList } = e.target.parentElement;
-    console.log(classList);
     if (classList.contains(remove)) {
         classList.remove(remove);
         
