@@ -7,6 +7,7 @@ export const handleMouseEnter = (e, remove, add) => {
     console.log(classList);
     if (classList.contains(remove)) {
         classList.remove(remove);
+        
     }
     classList.add(add);
     setTimeout(() => {
@@ -14,13 +15,13 @@ export const handleMouseEnter = (e, remove, add) => {
     }, 1000);
 };
 export const GifGridItem = ({ title, url }) => {
-
+    
     return (
         <div
-            className="card animate__animated animate__fadeInDownBig"
-            onMouseEnter={(e) => {
-                handleMouseEnter(e, 'animate__fadeInDownBig', 'animate__tada');
-            }}
+        className="card animate__animated animate__fadeInDownBig"
+        onMouseEnter={(e) => {
+            handleMouseEnter(e, 'animate__fadeInDownBig', 'animate__tada');
+        }}
         >
             <img src={url} alt={title} />
             <p> {title} </p>
